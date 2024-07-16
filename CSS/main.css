@@ -1,0 +1,79 @@
+:root{
+    --green:rgb(18, 94, 28);
+    --pink: #e5345b;
+}
+.bg-primary{
+    background-color: var(--pink) !important;
+    font-size: 9px;
+}
+
+.informacion{
+    
+}
+
+.nav-item{
+    border-bottom: 0.5px solid black;
+}
+
+nav-link{
+    border-radius: 16px;
+}
+.nav-link:hover{
+    transition: 0.3s;
+    color: rgb(48, 9, 222) !important;
+}
+#header{
+    background: url(../Assets/background\ real.jpg) top/cover no-repeat;
+}
+.btn:not(.nav-btns button){
+    background-color: aliceblue;
+    color: black !important;
+    border: 2px solid gray;
+    transition: 0.5s;
+    padding: 10px 28px;
+    border-radius: 25px;
+}
+
+/*Collection*/
+.title h2::before{
+    position: absolute;
+    content: ".";
+    color: green;
+    width: 4px;
+    height: 50px;
+    background-color: green;
+    left: -20;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width:46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: black;
+    color: grey;
+}
+
+@media (min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../Assets/jersey10-regular-webfont.woff2') format('woff2');
+}
+
+header {
+    font-family: 'Minecraft';
+}
+
+head {
+    font-family: 'Minecraft';
+}
+.btn:not(.nav-btns button):hover{
+    transition: 0.5s;
+    background-color: aqua; 
+    border-color: #e5345b;
+  }
