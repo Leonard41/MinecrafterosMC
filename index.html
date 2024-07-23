@@ -7,7 +7,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
 
     <!-- Main CSS -->
@@ -21,58 +21,394 @@
                 <span class="text-uppercase ms-2">Minecrafteros VE</span>
             </a>
 
-            <div class="mt-2 ms-2">
-                <button class="btn position-relative" type="button">
-                    <i class="fas fa-bell"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
-                </button>
+            <div class="mt-2 ms-2 order-lg-2 nav-btns">
+                <ul class="navbar-nav ms-auto text-center fw-bold">
+                    <li class="nav-item px-2 py-2">
+                        <button class="btn position-relative" type="button">
+                            <i class="fas fa-bell"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        </button>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <button class="btn position-relative" type="button">
+                            <i class="fas fa-star"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        </button>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <button class="btn position-relative" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+
             </div>
 
-            <div class="mt-2 ms-2">
-                <button class="btn position-relative" type="button">
-                    <i class=""></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
-                </button>
-            </div>
-
-            <button class="btn position-relative" type="button">
-                <i class="fas fa-search"></i>
-            </button>
-
-            <button class="navbar-toggler border-0" type="button">
+            <!-- Navbar toggler button -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Navbar collapse section -->
             <div class="collapse navbar-collapse order-lg-1" id="navMenu">
-                <ul class="navbar-nav mx-auto text-center fw-bold">
-                    <!--1-->
-                    <li class="nav-item.px-2.py-2">
-                        <a href="#header" class="nav-link text-uppercase">Home</a>
+                <ul class="navbar-nav ms-auto text-center fw-bold">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link text-uppercase">Mojang</a>
                     </li>
-                    <!--2-->
-                    <li class="nav-item.px-2.py-2">
-                        <a href="#collection" class="nav-link text-uppercase">collection</a>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#collection" class="nav-link text-uppercase">Servidores</a>
                     </li>
-                    <!--3-->
-                    <li class="nav-item.px-2.py-2">
-                        <a href="#specials" class="nav-link text-uppercase">specials</a>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#Marcadores" class="nav-link text-uppercase">Texture Packs</a>
                     </li>
-                    <!--4-->
-                    <li class="nav-item.px-2.py-2">
-                        <a href="#printers" class="nav-link text-uppercase">3d printers</a>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#Skins" class="nav-link text-uppercase">Skins</a>
                     </li>
-                    <!--5-->
-                    <li class="nav-item.px-2.py-2">
-                        <a href="#about" class="nav-link text-uppercase">about us</a>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about" class="nav-link text-uppercase">Sobre nosotros</a>
                     </li>
-                    <!--6-->
-                    <li class="nav-item.px-2.py-2">
-                        <a href="#popular" class="nav-link text-uppercase">popular</a>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link text-uppercase">Popular</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!--Header-->
+    <header id="header" class="vh-100 carousel slide"
+    db-ds-ride="carousel" style="padding-top: 104px">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Servidor</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">
+                    Minecrafteros Survival
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">Jugar</a>
+            </div>
+
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Texture Pack</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">
+                    City Texture Pack
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">Jugar</a>
+            </div>
+    
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Servidor</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">
+                    Minecrafteros Skywars
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">Jugar</a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" type="button"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+                <span class="carousel-control-next-icon" type="button"></span>
+            </button>
+        </header>
+        <!--Header end-->
+
+        <!--Collection-->
+        <section id="collection" class="py-5">
+            <div class="container">
+                <div class="title text-center">
+                    <h2 class="position-relative d-inline-block">
+                        Contenido Minecraftero
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5">
+                    <button class="btn m-2">Todo</button>
+                    <button class="btn m-2">Top</button>
+                    <button class="btn m-2">Gratis</button>
+                    <button class="btn m-2">De pago</button>
+                </div>
+            </div>
+        </div>
+            
+
+            <div class="collection-list mt-4 row gx-0 gy-3">
+
+            <!--1-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 Gratis">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/defend-helms-deep-map.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            Mapa
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Helms Deep</p>
+                        <span class="fw-bold">$1.99</span>
+                    </div>
+                </div>
+            <!--1-->
+
+            <!--2-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 Gratis">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/blockpixel-texture-pack.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            TP
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">BlockPixel</p>
+                        <span class="fw-bold">Gratis</span>
+                    </div>
+                </div>
+            <!--2-->          
+                
+                <!--3-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 Gratis">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/straw-hat-luffy-skin-363x212_waifu2x_1920x1080_3n_jpg.png" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            Skin
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Luffy</p>
+                        <span class="fw-bold">Gratis</span>
+                    </div>
+                </div>
+            <!--3-->
+
+            <!--4-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 Gratis">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/faithless-texture-pack.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            TP
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Faithless</p>
+                        <span class="fw-bold">Gratis</span>
+                    </div>
+                </div>
+            <!--4-->
+
+            <!--5-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 De pago">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/nature-x-texture-pack.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            TP
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">NatureX</p>
+                        <span class="fw-bold">Gratis</span>
+                    </div>
+                </div>
+            <!--5-->
+
+            <!--6-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 De pago">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/whimscape-texture-pack.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            TP
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Whimscape</p>
+                        <span class="fw-bold">$3.99</span>
+                    </div>
+                </div>
+            <!--6-->
+
+            <!--7-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 De pago">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/carry-on-mod.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            Mod
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Carry on </p>
+                        <span class="fw-bold">Gratis</span>
+                    </div>
+                </div>
+            <!--7-->
+
+            <!--8-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 me-0 De pago">
+                    <div class="collection-img position-relative">
+                        <img src="Assets/one-block-map.jpg" alt="" class="w-100" style="border-radius: 20px">
+                        <span class="position-absolute bg-green1 text-white justify-content-center align-items-center d-flex">
+                            Mapa
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                            <span class="text primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">One Block</p>
+                        <span class="fw-bold">$4.99</span>
+                    </div>
+                </div>
+            <!--8-->
+
+                
+            </div>
+        </section>
+
+        <!--Descarga de Juegos-->
+            <section class="py-5" id="special">
+               <div class="container">
+                    <div class="title text-center">
+                        <h2 class="position-relative d-inline-block">
+                            Comprar Juegos
+                        </h2>
+                    </div>
+
+                    <div class="especial-list row g-3">
+                        <!--1-->
+                        <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                            <div class="special-img position-relative overflow-hidden">
+                                <img src="Assets/minecraft.jpg" alt="" class="w-100 img-r" style="border-radius: 20px;">
+                                <span class="position-absolute align-items-center justify-content-center d-flex fs-4 text-primary">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3">
+                                    Minecraft
+                                </p>
+                                <span class="fw-bold d-block">$19.99</span>
+                                <a href="#" class="btn btn-primary text-dark">Comprar</a>
+                            </div>
+
+                        </div>
+                        <!--1-->
+
+                        <!--2-->
+                        <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                            <div class="special-img position-relative overflow-hidden">
+                                <img src="Assets/minecraftstory.jpeg" alt="" class="w-100 img-r" style="border-radius: 20px;">
+                                <span class="position-absolute align-items-center justify-content-center d-flex fs-4 text-primary">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3">
+                                    Minecraft Story Mode
+                                </p>
+                                <span class="fw-bold d-block">$9.99</span>
+                                <a href="#" class="btn btn-primary text-dark">Comprar</a>
+                            </div>
+
+                        </div>
+                        <!--2-->
+
+                        <!--3-->
+                        <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                            <div class="special-img position-relative overflow-hidden">
+                                <img src="Assets/minecraftdungeons.webp" alt="" class="w-100 img-r" style="border-radius: 20px;">
+                                <span class="position-absolute align-items-center justify-content-center d-flex fs-4 text-primary">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3">
+                                    Minecraft Dungeons
+                                </p>
+                                <span class="fw-bold d-block">$14.99</span>
+                                <a href="#" class="btn btn-primary text-dark">Comprar</a>
+                            </div>
+
+                        </div>
+                        <!--3-->
+
+                        <!--4-->
+                        <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                            <div class="special-img position-relative overflow-hidden">
+                                <img src="Assets/minecraftlegends.jpg" alt="" class="w-100 img-r" style="border-radius: 20px;">
+                                <span class="position-absolute align-items-center justify-content-center d-flex fs-4 text-primary">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3">
+                                    Minecraft Legends
+                                </p>
+                                <span class="fw-bold d-block">$4.99</span>
+                                <a href="#" class="btn btn-primary text-dark">Comprar</a>
+                            </div>
+
+                        </div>
+                        <!--4-->
+                    </div>
+               </div> 
+
+
+    
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+
+
 </body>
 </html>
